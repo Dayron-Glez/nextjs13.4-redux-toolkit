@@ -1,0 +1,48 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "tour redux-tollkit",
+  "steps": [
+    {
+      "title": "estado global store.ts",
+      "description": ""
+    },
+    {
+      "file": "src/redux/store.ts",
+      "description": "estado: objeto con valores que el resto de los componentes puedan leer",
+      "line": 1
+    },
+    {
+      "file": "src/redux/providers.tsx",
+      "description": "componente padre para todos los componentes",
+      "line": 1
+    },
+    {
+      "directory": "src/redux/features",
+      "description": "en la carpeta features se van  a colocar funciones que hagan algo en el estado, por ejemplo las acciones de incrementar o decrementar el valor del estado de un contador"
+    },
+    {
+      "directory": "src/redux/services",
+      "description": "en la carpeta services o api se ponen los fetching de datos, que en next es mejor hacerlo con SWR  y Axios\r\n"
+    },
+    {
+      "file": "src/redux/features/counterSlice.ts",
+      "description": "en las diferentes features lo primero que se hace es importar el create slice\r\n",
+      "line": 1
+    },
+    {
+      "file": "src/redux/features/counterSlice.ts",
+      "description": "El slice funciona algo parecido a un useSate. Ejemplo: \r\nconst [counter, setCounter] = useState(0). El 0 sería el valor del value, el counter sería el value en sí y el setCounter vendría siendo el reducers\r\n",
+      "line": 3
+    },
+    {
+      "file": "src/redux/features/counterSlice.ts",
+      "description": "Esta exportación se hace por defecto puesto que la anterior se utiliza cuando se ponen las {} en las importaciones, y cuando no se utilizan las {} entonces se dice que el estado por defecto es el valor del initialState acá definido ",
+      "line": 22
+    },
+    {
+      "file": "src/redux/store.ts",
+      "description": "counterReducer es la importación por defecto del estado inicial del archivo counterslice.ts\r\n",
+      "line": 2
+    }
+  ]
+}
