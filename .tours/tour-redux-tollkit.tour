@@ -43,6 +43,36 @@
       "file": "src/redux/store.ts",
       "description": "counterReducer es la importación por defecto del estado inicial del archivo counterslice.ts\r\n",
       "line": 2
+    },
+    {
+      "file": "src/redux/providers.tsx",
+      "description": "creamos la funcion Providers que va a ser un elemento contenedor, de ahí la necesidad de pasarle los children por los props, este componente se importa dentro del layout principal",
+      "line": 6
+    },
+    {
+      "file": "src/redux/providers.tsx",
+      "description": "el provider tiene que ser un use client",
+      "line": 1
+    },
+    {
+      "file": "src/redux/store.ts",
+      "description": "aca se están exportando los tipos de datos que yo tenga en el estado, por ejemplo el counter",
+      "line": 11
+    },
+    {
+      "file": "src/redux/store.ts",
+      "description": "acá se le está dando información a una función que se va a estar utilizando, verdaderamente útil para tener autocompletado",
+      "line": 12
+    },
+    {
+      "file": "src/redux/hooks.ts",
+      "description": "Este useAppDispatch le dice a useDispatch los reducers que se pueden utilizar y los tipos están definidos en <AppDispatch>.\r\nCuando se quieran utilizar características usa useAppDisptach",
+      "line": 4
+    },
+    {
+      "file": "src/redux/hooks.ts",
+      "description": "Cuando quieras utilizar un selector del estado ( un dato )utiliza useAppSelector",
+      "line": 5
     }
   ]
 }
